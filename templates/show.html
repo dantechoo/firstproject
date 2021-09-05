@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>show</title>
+</head>
+<body>
+{% for person in persons %}
+<h2>number {{forloop.counter}} staff</h2>
+<ul>
+    <li>name : {{person.name}}</li>
+    <li>age : {{person.age}}</li>
+    <li>country code : {{person.country}}</li>
+</ul>
+{% endfor %}
+</body>
+</html>

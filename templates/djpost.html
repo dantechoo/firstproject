@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>djpost</title>
+</head>
+<body>
+<h1>Django webpage</h1>
+<form method="post" action="/djpost">
+    {% csrf_token %}
+    <p>username : <input type="text" name="username"/></p>
+    <p>password : <input type="password" name="password"/></p>
+    <p><button type="submit">confirm</button></p>
+</form>
+</body>
+</html>

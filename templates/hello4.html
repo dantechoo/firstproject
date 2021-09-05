@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2nd templates with static(css)</title>
+   {% load static %}
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="home">
+    <img src="{% static 'image/ball.png' %}" alt="welcome" width="32" height="32" />
+    <span class="info">welcome, {{username}}</span>
+    <h2>current time is {{now}}</h2>
+</div>
+
+</body>
+</html>
